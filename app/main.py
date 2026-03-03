@@ -7,8 +7,8 @@ from app.people.cinema_staff import Cleaner
 def cinema_visit(movie: str,
                  customers: list,
                  hall_number: int,
-                 cleaner: str,
-                ) -> None:
+                 cleaner: str
+                 ) -> None:
     clean_staff = Cleaner(name=cleaner)
     hall = CinemaHall(number=hall_number)
 
